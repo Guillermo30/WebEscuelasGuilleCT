@@ -5,20 +5,6 @@ import circlesImg from '../images/circles.png'
 
 class Escuela extends React.Component{
 
-    constructor(props){
-        super(props)
-        this.state = {
-            imagen:''
-        }
-    }
-
-    // componentDidMount(){
-    //     setTimeout(() =>{
-    //       this.setState({
-    //           imagen: 'https://w7.pngwing.com/pngs/67/631/png-transparent-pink-hibiscus-flowers-flower-small-fresh-summer-flowers-herbaceous-plant-summer-malvales-thumbnail.png'
-    //       })
-    //     },5000)
-    //}
     render() {
         const { nombre,email,description,imagen,leftColor,rigthColor } = this.props
         return (

@@ -1,8 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Firma from '../Components/Firma'
-import Escuela from '../Components/Escuela'
-import escuelaimg from '../images/exercise.png'
+import ListarEscuelas from '../Components/ListarEscuelas'
 
 class ListaEscuelas extends React.Component{
 
@@ -142,22 +140,12 @@ class ListaEscuelas extends React.Component{
 
         return (
             <div>
-                {this.state.data.map((escuela)=> {
-                    return (
-                        <Escuela 
-                            nombre = {escuela.nome}
-                            email ={escuela.email}
-                            description = {escuela.tipo}
-                            imagen= {escuelaimg}
-                            leftColor="#A74CF2"
-                            rigthColor="#617BFB"
-                        />
-                    )
-                })}
-           
-              <Firma
+            <ListarEscuelas
+                escuelas = {this.state.data}
+            />
+            <Firma
                 username = "Guillermo"
-              />
+            />
         </div>
         )
     }
