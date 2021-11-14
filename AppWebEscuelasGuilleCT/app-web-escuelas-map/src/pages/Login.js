@@ -13,8 +13,7 @@ const baseUrl="https://backendappescuelas.azurewebsites.net/api/v1/escuelas";
 const cookies = new Cookies();
 
 const [form, setForm]=useState({
-    username:'',
-    password: ''
+    escuela:''
   });
 
 const handleChange=e=>{
@@ -38,7 +37,7 @@ const iniciarSesion=async()=>{
             // cookies.set('correo', respuesta.correo, {path: '/'});
             // cookies.set('username', respuesta.username, {path: '/'});
             // cookies.set('password', respuesta.password, {path: '/'});
-            alert("Bienvenido: "+ respuesta.id +" "+ respuesta.nome);
+            //alert("Bienvenido: "+ respuesta.id +" "+ respuesta.nome);
             props.history.push('/menu');
           
         })
