@@ -1,19 +1,16 @@
 import React from "react";
-import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Menu from '../pages/Menu';
 import Login from '../pages/Login';
 
 function App() {
   return (
     <BrowserRouter>
-        <Switch>
-            <Route>
-                <Route path="/" component= {<Login />}/>
-                <Route path="/menu" component= {<Menu />}/>
-
-            </Route>
-        </Switch>
-    
+        <Routes>
+            <Route exact path="/" element={<Login />} />
+            <Route exact path="menu" element={<Menu />} />
+        </Routes> 
+        {/* <Login />  */}
     </BrowserRouter>
   );
 }
