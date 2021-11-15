@@ -4,16 +4,16 @@ import ListaEscuelas from '../pages/ListaEscuelas'
 import BuscadorEscuelas from '../pages/BuscadorEscuelas'
 import NotFound from '../pages/NotFound'
 
-function App(){
-    return (
-        <BrowserRouter>
+const App = () => (
+    <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<ListaEscuelas />} />
                 <Route exact path="/escuelas/buscar" element={<BuscadorEscuelas />} />
                 <Route exact path="/*" element={<NotFound />} />
             </Routes> 
         </BrowserRouter>
-    )
-}
+
+)
+
 
 export default App

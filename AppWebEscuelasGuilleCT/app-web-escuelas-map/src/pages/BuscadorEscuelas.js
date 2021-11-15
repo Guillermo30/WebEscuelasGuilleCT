@@ -1,13 +1,17 @@
 import React from 'react'
-import Firma from '../Components/Firma'
 
 class BuscadorEscuelas extends React.Component {
-
+ 
+    handleClick = () => {
+        console.log(this)
+    }
     render(){
         return (
-            <Firma
-                username = "Guillermo"
-            />
+          
+               <button onClick = {this.handleClick}>
+                    send
+               </button>
+                 
         )
     }
 

@@ -1,15 +1,13 @@
 import React from 'react'
 import './styles/Firma.css'
 
-function Firma(props){
-     return(
+const Firma = ({username}) =>(
         <div className="container">
             <div className="Firma-User-Info">
-                <p>Realizado por: {props.username}!</p>
+                <p>Realizado por: {username}</p>
+            </div>
         </div>
-    </div>
-     )
-}
+)
 
 export default Firma
 

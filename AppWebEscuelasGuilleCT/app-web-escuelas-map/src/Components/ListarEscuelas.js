@@ -2,12 +2,12 @@ import React from 'react'
 import escuelaimg from '../images/exercise.png'
 import Escuela from '../Components/Escuela'
 
-function ListarEscuelas(props){
-    return (
-        <div>
-             {props.escuelas.map((escuela)=> {
+const ListarEscuelas = ({escuelas})=> (
+    <div>
+             {escuelas.map((escuela)=> {
                     return (
                         <Escuela 
+                            key = {escuela.id}
                             nombre = {escuela.nome}
                             email ={escuela.email}
                             description = {escuela.tipo}
@@ -18,7 +18,8 @@ function ListarEscuelas(props){
                     )
                 })}
         </div>
-    )
-}
+)
+
+
 
 export default ListarEscuelas
