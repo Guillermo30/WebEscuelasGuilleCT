@@ -1,6 +1,7 @@
 import React from 'react'
 import Firma from '../Components/Firma'
 import ListarEscuelas from '../Components/ListarEscuelas'
+import AddButton from '../Components/AddButton'
 
 class ListaEscuelas extends React.Component{
 
@@ -139,10 +140,11 @@ class ListaEscuelas extends React.Component{
     render (){
 
         return (
-            <div>
+        <div>
             <ListarEscuelas
                 escuelas = {this.state.data}
             />
+            <AddButton />
             <Firma
                 username = "Guillermo"
             />
